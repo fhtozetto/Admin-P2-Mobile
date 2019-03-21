@@ -24,9 +24,7 @@ export class PrincipalPage {
     .subscribe(response => { 
       this.items = response;
     },
-    error => {
-      console.log(error);
-    });
+    error => {});
   }
 
 }
