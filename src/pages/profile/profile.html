@@ -3,10 +3,11 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>profile</ion-title>
+    <ion-title>Profile</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  {{ email }}
+  <h2 text-center>{{ usuario?.nomeCompleto }}</h2>
+  <p text-center>{{ usuario?.email }}</p>
 </ion-content>
