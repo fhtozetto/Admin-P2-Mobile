@@ -1,8 +1,8 @@
-import { UsuarioDTO } from './../../app/models/usuario.dto';
-import { UsuarioService } from './../../app/services/domain/usuario.service';
+import { UsuarioDTO } from './../../models/usuario.dto';
+import { UsuarioService } from './../../services/domain/usuario.service';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { StorageService } from '../../app/services/storage.service';
+import { StorageService } from '../../services/storage.service';
 
 @IonicPage()
 @Component({

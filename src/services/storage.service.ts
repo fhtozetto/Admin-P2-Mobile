@@ -1,6 +1,6 @@
 import { LocalUser } from './../models/local_user';
 import { Injectable } from "@angular/core";
-import { STORAGE_KEYS } from '../../Config/storage_key.config';
+import { STORAGE_KEYS } from '../Config/storage_key.config';
 
 @Injectable()
 export class StorageService {

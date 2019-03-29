@@ -1,4 +1,4 @@
-import { ProdutoService } from './services/domain/produto.service';
+import { ProdutoService } from '../services/domain/produto.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -8,10 +8,11 @@ import { MyApp } from './app.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { UsuarioService } from './services/domain/usuario.service';
 import { ErrorInterceptorProvider } from '../interceptor/error-interceptor';
-import { AuthService } from './services/auth.service';
-import { StorageService } from './services/storage.service';
+import { AuthService } from '../services/auth.service';
+import { StorageService } from '../services/storage.service';
+import { UsuarioService } from '../services/domain/usuario.service';
+import { AuthInterceptorProvider } from '../interceptor/auth-interceptor';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { StorageService } from './services/storage.service';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     UsuarioService, 
     ProdutoService,
+    AuthInterceptorProvider,
     ErrorInterceptorProvider,
     AuthService,
     StorageService

@@ -1,5 +1,5 @@
 import { ProdutoDTO } from './../../models/produto.dto';
-import { API_CONFIG } from './../../../Config/api.config';
+import { API_CONFIG } from './../../Config/api.config';
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Observable } from 'rxjs/Rx';

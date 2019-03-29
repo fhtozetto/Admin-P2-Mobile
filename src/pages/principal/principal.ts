@@ -1,7 +1,7 @@
-import { ProdutoDTO } from './../../app/models/produto.dto';
+import { ProdutoDTO } from './../../models/produto.dto';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ProdutoService } from '../../app/services/domain/produto.service';
+import { ProdutoService } from '../../services/domain/produto.service';
 
 @IonicPage()
 @Component({
